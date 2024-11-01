@@ -10,10 +10,79 @@
   </head>
 
   <body>
-  
-    <form name="myForm" action="handler.php" method="POST">
-          
-    </form>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Freddy Fazbear's Pizza Order Form</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!-- Your content goes here -->
+          <center>
+          <h1>Enter your order here!</h1>
+          </center>
+          <form name="pizzaorder" action="handler.php" method="POST">
+            <center>
+            <div class="mdl-card">
+              <center>
+              <h3>Pizza Size</h3>
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="size" value="large">
+                    <span class="mdl-radio__label">Large</span>
+                  </label>
+                </div>
+                <div class="mdl-cell mdl-cell--6-col">
+                  <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                    <input type="radio" id="option-2" class="mdl-radio__button" name="size" value="extralarge">
+                    <span class="mdl-radio__label">Extra Large</span>
+                  </label>
+                </div>
+              </div>
+              <h3>Toppings</h3>
+              <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--3-col">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
+                <input type="radio" id="option-3" class="mdl-radio__button" name="topping" value="1">
+                <span class="mdl-radio__label">1</span>
+              </label>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
+                <input type="radio" id="option-4" class="mdl-radio__button" name="topping" value="2">
+                <span class="mdl-radio__label">2</span>
+              </label>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-5">
+                <input type="radio" id="option-5" class="mdl-radio__button" name="topping" value="3">
+                <span class="mdl-radio__label">3</span>
+              </label>
+                </div>
+                <div class="mdl-cell mdl-cell--3-col">
+              <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-6">
+                <input type="radio" id="option-6" class="mdl-radio__button" name="topping" value="4">
+                <span class="mdl-radio__label">4</span>
+              </label>
+                </div>
+              </div>
+              </center>
+            </div>
+            <br>
+            <!-- Raised button with ripple -->
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">
+              Order
+            </button>
+            </center>
+          </form>
+          </center>
+        </div>
+      </main>
+    </div>
 
   </body>
 </html>
